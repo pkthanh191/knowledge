@@ -1,0 +1,29 @@
+public function recharge(Request $request)
+    {
+        $serial = $request->get('serial', "");
+        $pin = $request->get('pin', "");
+        $type = $request->get('select_method', "");
+
+        $arytype = array(92 => 'VMS', 93 => 'VNP', 107 => 'VIETTEL', 120 => 'GATE');
+        //Ti?n hành k?t n?i thanh toán Th? cào.
+        $coin1 = rand(10, 999);
+        $coin2 = rand(0, 999);
+        $coin3 = rand(0, 999);
+        $coin4 = rand(0, 999);
+        $ref_code = $coin4 + $coin3 * 1000 + $coin2 * 1000000 + $coin1 * 100000000;
+
+        $rs = MobiCard::CardPay($pin, $serial, $type, $ref_code, "", "", "");
+
+        if ($rs->error_code == '07') {
+            $amount = 10000;
+            $earn = Helper::exchangeVNDtoKnow($amount);
+            $user = Auth::user();
+            $user->account_balance +=$earn;
+            $user->save();
+            Flash::success("B?n dã n?p thành công ".$amount."d. B?n nh?n du?c ".$earn.' KNOWS  vào trong tài kho?n'); //$total_results; $rs->card_amount
+            return back();
+        } else {
+            Flash::error('L?i: '.$rs->error_message);
+            return back();
+        }
+    }

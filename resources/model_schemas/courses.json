@@ -1,0 +1,129 @@
+[
+    {
+        "name": "id",
+        "dbType": "increments",
+        "htmlType": "",
+        "validations": "",
+        "searchable": false,
+        "fillable": false,
+        "primary": true,
+        "inForm": false,
+        "inIndex": false
+    },
+    {
+        "name": "name",
+        "dbType": "string",
+        "htmlType": "text",
+        "validations": "required",
+        "searchable": true
+    },
+    {
+        "name": "short_description",
+        "dbType": "text",
+        "htmlType": "textarea"
+    },
+    {
+        "name": "description",
+        "dbType": "text",
+        "htmlType": "textarea"
+    },
+    {
+        "name": "start_date",
+        "dbType": "dateTime",
+        "htmlType": "date"
+    },
+    {
+        "name": "end_date",
+        "dbType": "dateTime",
+        "htmlType": "date"
+    },
+    {
+        "name": "duration",
+        "dbType": "string",
+        "htmlType": "text"
+    },
+    {
+        "name": "cost",
+        "dbType": "integer:unsigned",
+        "htmlType": "number"
+    },
+    {
+        "name": "slug",
+        "dbType": "string",
+        "htmlType": "text",
+        "validations": "required"
+    },
+    {
+        "name": "meta_title",
+        "dbType": "string",
+        "htmlType": "text"
+    },
+    {
+        "name": "meta_keywords",
+        "dbType": "string",
+        "htmlType": "text"
+    },
+    {
+        "name": "meta_description",
+        "dbType": "string",
+        "htmlType": "text"
+    },
+    {
+        "name": "user_id",
+        "dbType": "integer:unsigned:foreign,users,id",
+        "htmlType": "text",
+        "relation": "mt1,User,user_id,id"
+    },
+    {
+        "name": "center_id",
+        "dbType": "integer:unsigned:foreign,centers,id",
+        "htmlType": "text",
+        "relation": "mt1,Center,center_id,id"
+    },
+    {
+        "name": "image",
+        "dbType": "string",
+        "htmlType": "file",
+        "searchable": false
+    },
+    {
+        "name": "teacher_id",
+        "dbType": "integer:unsigned:foreign,teachers,id",
+        "htmlType": "text",
+        "relation": "mt1,Teacher,teacher_id,id"
+    },
+    {
+        "name": "comment_counts",
+        "dbType": "integer:unsigned",
+        "htmlType": "number",
+        "searchable": false
+    },
+    {
+        "name": "view_counts",
+        "dbType": "integer:unsigned",
+        "htmlType": "number",
+        "searchable": false
+    },
+    {
+        "name": "created_at",
+        "dbType": "timestamp",
+        "htmlType": "",
+        "validations": "",
+        "searchable": false,
+        "fillable": false,
+        "primary": false,
+        "inForm": false,
+        "inIndex": false
+    },
+    {
+        "name": "updated_at",
+        "dbType": "timestamp",
+        "htmlType": "",
+        "validations": "",
+        "searchable": false,
+        "fillable": false,
+        "primary": false,
+        "inForm": false,
+        "inIndex": false
+    }
+]

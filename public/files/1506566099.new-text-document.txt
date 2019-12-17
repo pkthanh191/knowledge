@@ -1,0 +1,4 @@
+- Sửa phần thanh menu khi mở rộng bị tràn dài xuống
+- Phần giao dịch không hiển thị tiền
+- icon download thêm text vào trước text 'nhấn vào đây để download'
+- Phần hiển thị file download xử lý chỉ hiển thị 1 phần của file và không cho link trực tiếp của frame

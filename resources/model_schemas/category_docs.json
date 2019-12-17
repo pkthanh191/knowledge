@@ -1,0 +1,76 @@
+[
+    {
+        "name": "id",
+        "dbType": "increments",
+        "htmlType": "",
+        "validations": "",
+        "searchable": false,
+        "fillable": false,
+        "primary": true,
+        "inForm": false,
+        "inIndex": false
+    },
+    {
+        "name": "name",
+        "dbType": "string",
+        "htmlType": "text",
+        "validations": "required"
+    },
+    {
+        "name": "description",
+        "dbType": "text",
+        "htmlType": "textarea"
+    },
+    {
+        "name": "orderSort",
+        "dbType": "integer:unsigned",
+        "htmlType": "number"
+    },
+    {
+        "name": "parent_id",
+        "dbType": "integer:unsigned",
+        "htmlType": "number"
+    },
+    {
+        "name": "slug",
+        "dbType": "string",
+        "htmlType": "text"
+    },
+    {
+        "name": "meta_title",
+        "dbType": "string",
+        "htmlType": "text"
+    },
+    {
+        "name": "meta_keywords",
+        "dbType": "string",
+        "htmlType": "text"
+    },
+    {
+        "name": "meta_description",
+        "dbType": "string",
+        "htmlType": "text"
+    },
+    {
+        "name": "created_at",
+        "dbType": "timestamp",
+        "htmlType": "",
+        "validations": "",
+        "searchable": false,
+        "fillable": false,
+        "primary": false,
+        "inForm": false,
+        "inIndex": false
+    },
+    {
+        "name": "updated_at",
+        "dbType": "timestamp",
+        "htmlType": "",
+        "validations": "",
+        "searchable": false,
+        "fillable": false,
+        "primary": false,
+        "inForm": false,
+        "inIndex": false
+    }
+]

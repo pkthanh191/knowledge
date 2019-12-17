@@ -1,0 +1,49 @@
+[
+  {
+    "name": "id",
+    "dbType": "increments",
+    "htmlType": "",
+    "validations": "",
+    "searchable": false,
+    "fillable": false,
+    "primary": true,
+    "inForm": false,
+    "inIndex": false
+  },
+  {
+    "name": "apply_form",
+    "dbType": "timestamp",
+    "htmlType": "",
+    "validations": ""
+  },
+  {
+    "name": "apply_to",
+    "dbType": "timestamp",
+    "htmlType": "",
+    "validations": ""
+  },
+  {
+    "name": "cost_form",
+    "dbType": "integer",
+    "htmlType": "",
+    "validations": "required"
+  },
+  {
+    "name": "cost_to",
+    "dbType": "integer",
+    "htmlType": "",
+    "validations": ""
+  },
+  {
+    "name": "coefficient",
+    "dbType": "double",
+    "htmlType": "",
+    "validations": "required"
+  },
+  {
+    "name": "description",
+    "dbType": "text",
+    "htmlType": "",
+    "validations": ""
+  }
+]

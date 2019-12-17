@@ -1,0 +1,47 @@
+[
+    {
+        "name": "id",
+        "dbType": "increments",
+        "htmlType": "",
+        "validations": "",
+        "searchable": false,
+        "fillable": false,
+        "primary": true,
+        "inForm": false,
+        "inIndex": false
+    },
+    {
+        "name": "category_id",
+        "dbType": "integer:unsigned:foreign,category_docs,id",
+        "htmlType": "text",
+        "relation": "mt1,CategoryDoc,category_id,id"
+    },
+    {
+        "name": "document_id",
+        "dbType": "integer:unsigned:foreign,documents,id",
+        "htmlType": "text",
+        "relation": "mt1,Document,document_id,id"
+    },
+    {
+        "name": "created_at",
+        "dbType": "timestamp",
+        "htmlType": "",
+        "validations": "",
+        "searchable": false,
+        "fillable": false,
+        "primary": false,
+        "inForm": false,
+        "inIndex": false
+    },
+    {
+        "name": "updated_at",
+        "dbType": "timestamp",
+        "htmlType": "",
+        "validations": "",
+        "searchable": false,
+        "fillable": false,
+        "primary": false,
+        "inForm": false,
+        "inIndex": false
+    }
+]

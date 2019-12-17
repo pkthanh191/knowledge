@@ -1,0 +1,99 @@
+[
+  {
+    "name": "id",
+    "dbType": "increments",
+    "htmlType": "",
+    "validations": "",
+    "searchable": false,
+    "fillable": false,
+    "primary": true,
+    "inForm": false,
+    "inIndex": false
+  },
+  {
+    "name": "group_id",
+    "dbType": "integer",
+    "htmlType": "number",
+    "validations": "required"
+  },
+  {
+    "name": "username",
+    "dbType": "string",
+    "htmlType": "text",
+    "validations": "required"
+  },
+  {
+    "name": "password",
+    "dbType": "string",
+    "htmlType": "password",
+    "validations": "required"
+  },
+  {
+    "name": "name",
+    "dbType": "string",
+    "htmlType": "text"
+  },
+  {
+    "name": "age",
+    "dbType": "integer",
+    "htmlType": "number"
+  },
+  {
+    "name": "phone",
+    "dbType": "string",
+    "htmlType": "text"
+  },
+  {
+    "name": "email",
+    "dbType": "string",
+    "htmlType": "text"
+  },
+  {
+    "name": "address",
+    "dbType": "string",
+    "htmlType": "text"
+  },
+  {
+    "name": "sex",
+    "dbType": "integer",
+    "htmlType": "number"
+  },
+  {
+    "name": "account_balance",
+    "dbType": "integer",
+    "htmlType": "number",
+    "validations": "required"
+  },
+  {
+    "name": "actived",
+    "dbType": "integer",
+    "htmlType": "number"
+  },
+  {
+    "name": "created_at",
+    "dbType": "timestamp",
+    "htmlType": "",
+    "validations": "",
+    "searchable": false,
+    "fillable": false,
+    "primary": false,
+    "inForm": false,
+    "inIndex": false
+  },
+  {
+    "name": "updated_at",
+    "dbType": "timestamp",
+    "htmlType": "",
+    "validations": "",
+    "searchable": false,
+    "fillable": false,
+    "primary": false,
+    "inForm": false,
+    "inIndex": false
+  },
+  {
+    "name": "social_id",
+    "dbType": "string",
+    "htmlType": "text"
+  }
+]

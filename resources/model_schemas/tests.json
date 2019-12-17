@@ -1,0 +1,120 @@
+[
+    {
+        "name": "id",
+        "dbType": "increments",
+        "htmlType": "",
+        "validations": "",
+        "searchable": false,
+        "fillable": false,
+        "primary": true,
+        "inForm": false,
+        "inIndex": false
+    },
+    {
+        "name": "name",
+        "dbType": "string",
+        "htmlType": "text",
+        "validations": "required",
+        "searchable": true
+    },
+    {
+        "name": "short_description",
+        "dbType": "text",
+        "htmlType": "textarea"
+    },
+    {
+        "name": "description",
+        "dbType": "text",
+        "htmlType": "textarea"
+    },
+    {
+        "name": "slug",
+        "dbType": "string",
+        "htmlType": "text",
+        "validations": "required"
+    },
+    {
+        "name": "meta_title",
+        "dbType": "string",
+        "htmlType": "text"
+    },
+    {
+        "name": "meta_keywords",
+        "dbType": "string",
+        "htmlType": "text"
+    },
+    {
+        "name": "meta_description",
+        "dbType": "string",
+        "htmlType": "text"
+    },
+    {
+        "name": "comment_counts",
+        "dbType": "integer:unsigned",
+        "htmlType": "number",
+        "searchable": false
+    },
+    {
+        "name": "view_counts",
+        "dbType": "integer:unsigned",
+        "htmlType": "number",
+        "searchable": false
+    },
+    {
+        "name": "duration",
+        "dbType": "integer:unsigned",
+        "htmlType": "number",
+        "searchable": false
+    },
+    {
+        "name": "image",
+        "dbType": "string",
+        "htmlType": "file",
+        "searchable": false
+    },
+    {
+        "name": "file",
+        "dbType": "string",
+        "htmlType": "file",
+        "searchable": false
+    },{
+        "name": "link_download",
+        "dbType": "string",
+        "htmlType": "text",
+        "searchable": false
+    },
+    {
+        "name": "short_file",
+        "dbType": "string",
+        "htmlType": "text",
+        "searchable": false
+    },
+    {
+        "name": "user_id",
+        "dbType": "integer:unsigned:foreign,users,id",
+        "htmlType": "text",
+        "relation": "mt1,User,user_id,id"
+    },
+    {
+        "name": "created_at",
+        "dbType": "timestamp",
+        "htmlType": "",
+        "validations": "",
+        "searchable": false,
+        "fillable": false,
+        "primary": false,
+        "inForm": false,
+        "inIndex": false
+    },
+    {
+        "name": "updated_at",
+        "dbType": "timestamp",
+        "htmlType": "",
+        "validations": "",
+        "searchable": false,
+        "fillable": false,
+        "primary": false,
+        "inForm": false,
+        "inIndex": false
+    }
+]

@@ -1,0 +1,114 @@
+[
+  {
+    "name": "id",
+    "dbType": "increments",
+    "htmlType": "",
+    "validations": "",
+    "searchable": false,
+    "fillable": false,
+    "primary": true,
+    "inForm": false,
+    "inIndex": false
+  },
+  {
+    "name": "title",
+    "dbType": "string",
+    "htmlType": "text",
+    "validations": "required"
+  },
+  {
+    "name": "phone",
+    "dbType": "string",
+    "htmlType": "number",
+    "validations": "required"
+  },
+  {
+    "name": "email",
+    "dbType": "string",
+    "htmlType": "text"
+  },
+  {
+    "name": "requirement",
+    "dbType": "text",
+    "htmlType": "textarea"
+  },
+  {
+    "name": "period",
+    "dbType": "string",
+    "htmlType": "text"
+  },
+  {
+    "name": "frequency",
+    "dbType": "integer:unsigned",
+    "htmlType": "number"
+  },
+  {
+    "name": "salary",
+    "dbType": "string",
+    "htmlType": "text"
+  },
+  {
+    "name": "active",
+    "dbType": "integer:unsigned",
+    "htmlType": "radio,Actice,Inactice"
+  },
+  {
+    "name": "confirm",
+    "dbType": "integer:unsigned",
+    "htmlType": "radio,Comfirmed,Unconfirmed"
+  },
+  {
+    "name": "slug",
+    "dbType": "string",
+    "htmlType": "text",
+    "validations": "required"
+  },
+  {
+    "name": "meta_title",
+    "dbType": "string",
+    "htmlType": "text"
+  },
+  {
+    "name": "meta_keywords",
+    "dbType": "string",
+    "htmlType": "text"
+  },
+  {
+    "name": "meta_description",
+    "dbType": "string",
+    "htmlType": "text"
+  },
+  {
+    "name": "address",
+    "dbType": "string",
+    "htmlType": "text"
+  },
+  {
+    "name": "district_id",
+    "dbType": "integer:unsigned:foreign,districts,id",
+    "htmlType": "text",
+    "relation": "mt1,District,district_id,id"
+  },
+  {
+    "name": "created_at",
+    "dbType": "timestamp",
+    "htmlType": "",
+    "validations": "",
+    "searchable": false,
+    "fillable": false,
+    "primary": false,
+    "inForm": false,
+    "inIndex": false
+  },
+  {
+    "name": "updated_at",
+    "dbType": "timestamp",
+    "htmlType": "",
+    "validations": "",
+    "searchable": false,
+    "fillable": false,
+    "primary": false,
+    "inForm": false,
+    "inIndex": false
+  }
+]

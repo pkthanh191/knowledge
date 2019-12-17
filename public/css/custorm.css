@@ -1,0 +1,62 @@
+.alert {
+    padding: 10px;
+}
+.required {
+    color: #ff0000;
+}
+
+.white {
+    color: #fff;
+}
+
+.tab-pane .box {
+    margin-bottom: 0px;
+}
+
+.tooltip-inner {
+    white-space: pre-wrap;
+    min-width: 60px;
+}
+
+.btn-yellow{
+    background-color:  #e6e600 !important;
+    color: #fff;
+}
+
+.btn-yellow:hover{
+    background-color: #e9e9e9 !important;
+    color: #fff;
+}
+
+.btn-green{
+    background-color: #40bf40 !important;
+    color: #fff;
+}
+
+.btn-green:hover{
+    background-color: #e9e9e9 !important;
+    color: #fff;
+}
+
+.bg-olive:hover{
+    background-color: #e9e9e9 !important;
+}
+
+.btn-warning:hover{
+    background-color: #e9e9e9 !important;
+}
+
+.comment{
+    list-style-type: none;
+}
+
+.timeComment{
+    margin-left: 10px;
+}
+
+.select2-container--default .select2-selection--multiple .select2-selection__choice{
+    background-color: rgba(15, 95, 119, 0.54);
+}
+.select2-container--default .select2-selection--multiple .select2-selection__choice__remove {
+    color: rgba(49, 11, 124, 0.81);
+}
