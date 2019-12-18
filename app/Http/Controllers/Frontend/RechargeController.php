@@ -119,7 +119,7 @@ class RechargeController extends Controller
                 $input['name'] = $phone;
                 $input['email'] = $email;
                 $input['phone'] = $phone;
-                $input['avatar'] = '/uploads/default-avatar.png';
+                $input['avatar'] = '/public/uploads/default-avatar.png';
                 $pass = Helper::generateRandomString(10);
                 $password = Hash::make($pass);
                 $input['password'] = $password;

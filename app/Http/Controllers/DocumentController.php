@@ -112,9 +112,9 @@ class DocumentController extends AppBaseController
             $imageName = time() . '.' . Helper::transText($request->image->getClientOriginalName(), '-');
             $request->image->move(public_path('uploads/documents'), $imageName);
             $request->image = $imageName;
-            $input['image'] = '/uploads/documents/' . $imageName;
+            $input['image'] = '/public/uploads/documents/' . $imageName;
         } else {
-            $input['image'] = '/uploads/documents/default-image.png';
+            $input['image'] = '/public/uploads/documents/default-image.png';
         }
         if (!empty($request->file)) {
             $file = time() . '.' . Helper::transText($request->file->getClientOriginalName(), '-');;
@@ -244,7 +244,7 @@ class DocumentController extends AppBaseController
             $imageName = time() . '.' . Helper::transText($request->image->getClientOriginalName(), '-');
             $request->image->move(public_path('uploads/documents'), $imageName);
             $request->image = $imageName;
-            $input['image'] = '/uploads/documents/' . $imageName;
+            $input['image'] = '/public/uploads/documents/' . $imageName;
         }
         if (!empty($request->file)) {
             $file = time() . '.' . Helper::transText($request->file->getClientOriginalName(), '-');
@@ -579,7 +579,7 @@ class DocumentController extends AppBaseController
                             $input['meta_keywords'] = $row[str_slug(__('messages.meta_keywords'), '_')];
                             $input['meta_description'] = $row[str_slug(__('messages.meta_description'), '_')];
                             if (empty($row[str_slug(__('messages.image_url'), '_')]) || !file_exists(public_path($row[str_slug(__('messages.image_url'), '_')])))
-                                $input['image'] = '/uploads/default-image.png';
+                                $input['image'] = '/public/uploads/default-image.png';
                             else
                                 $input['image'] = $row[str_slug(__('messages.image_url'), '_')];
                             $input['file'] = $row[str_slug(__('messages.document_file'), '_')];

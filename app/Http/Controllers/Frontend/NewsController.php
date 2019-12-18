@@ -103,7 +103,7 @@ class NewsController extends FrontendBaseController
                         'comment_id' => $comment->id,
                         'updated_at' => $comment->updated_at->format('Y-m-d H:i:s'),
                         'user' => $comment->user->name,
-                        'avatar' =>  (!empty($comment->user->avatar) && file_exists(public_path($comment->user->avatar)))?$comment->user->avatar:'/uploads/default-avatar.png',
+                        'avatar' =>  (!empty($comment->user->avatar) && file_exists(public_path($comment->user->avatar)))?$comment->user->avatar:'/public/uploads/default-avatar.png',
                         'comment_counts' => $news->comment_counts,
                         'view_counts' => $news->view_counts,
                         'account_balanced' => $user->account_balance);

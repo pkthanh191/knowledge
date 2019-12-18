@@ -7503,7 +7503,7 @@ ul.check-circle li:before {
 }
 
 #header .logo a, #footer .logo a, .chaser .logo a {
-    background: url("/frontend/images/logo.png") no-repeat 0 0;
+    background: url("/public/frontend/images/logo.png") no-repeat 0 0;
     display: block
 }
 
@@ -8385,8 +8385,8 @@ ul.menu.mini li:hover a, ul.menu.mini li.active a {
 .no-backgroundsize .chaser .logo a {
     background-size: auto 20px;
     background-image: none;
-    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/frontend/images/logo.png', sizingMethod='scale');
-    -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/frontend/images/logo.png', sizingMethod='scale')"
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/public/frontend/images/logo.png', sizingMethod='scale');
+    -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/public/frontend/images/logo.png', sizingMethod='scale')"
 }
 
 .travelo-signup-box, .travelo-login-box, .travelo-forgot-pass-box {

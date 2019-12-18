@@ -9,7 +9,7 @@
                 <div class="col-sm-6 col-md-2 item-padding">
                     <article class="box">
                         <figure>
-                            <a href="{{ route('centers.show', $center->slug) }}" class="text-center"><img class="document-img-home-center" alt="{{ $center->slug }}" data-original="{{ $center->image }}"></a>
+                            <a href="{{ route('centers.show', $center->slug) }}" class="text-center"><img class="document-img-home-center" alt="{{ $center->slug }}" data-original="/public/{{ $center->image }}"></a>
                         </figure>
                         <div class="details">
                             <h5 class="box-title text-center">

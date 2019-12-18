@@ -37,7 +37,7 @@
 <div class="login-box">
     <div class="login-logo">
         <a href="/" title="KNOWLEDGE.VN">
-            <img src="/frontend/images/logo.png" alt="KNOWLEDGE.VN" />
+            <img src="{{ asset('public/frontend/images/logo.png') }}" alt="KNOWLEDGE.VN" />
         </a>
         <br/>
         <a href="{{ url('/') }}"><b>@lang('auth.login_administrator')</b></a>

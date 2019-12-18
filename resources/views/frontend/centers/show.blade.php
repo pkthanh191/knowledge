@@ -10,7 +10,7 @@
             <div class="sidebar col-md-3">
                 <article class="detailed-logo">
                     <figure>
-                        <img data-original="{{ $center->image }}" alt="{{ $center->slug }}">
+                        <img data-original="/public/{{ $center->image }}" alt="{{ $center->slug }}">
                     </figure>
                     <div class="details">
                         <h2 class="box-title">{{ $center->name }}</h2>
@@ -74,7 +74,7 @@
                                         <li>
                                             <a href="{{ route('teachers.show', $teacher->slug) }}"
                                                class="hover-effect">
-                                                <img data-original="{{ $teacher->image }}" alt="{{ $teacher->slug }}"
+                                                <img data-original="/public/{{ $teacher->image }}" alt="{{ $teacher->slug }}"
                                                      class="middle-item"/>
                                             </a>
                                             <h5 class="caption">{{ $teacher->name }}</h5>
@@ -97,7 +97,7 @@
                                         <li>
                                             <a href="{{ route('courses.show', $course->slug) }}"
                                                class="hover-effect">
-                                                <img data-original="{{ $course->image }}" alt="{{ $course->slug}}"
+                                                <img data-original="/public/{{ $course->image }}" alt="{{ $course->slug}}"
                                                      class="middle-item"/>
                                             </a>
                                             <h5 class="caption">{{ $course->name }}</h5>
@@ -126,7 +126,7 @@
                                         <article class="box">
                                             <figure><a href="{{ route('centers.show', $center->slug) }}"
                                                        title="{{ $center->name }}"><img width="63" height="59"
-                                                                                        data-original="{{ $center->image }}"
+                                                                                        data-original="/public/{{ $center->image }}"
                                                                                         alt="{{ $center->slug }}"></a>
                                             </figure>
                                             <div class="details">
@@ -149,7 +149,7 @@
                                     <article class="box">
                                         <figure><a href="{{ route('documents.show', $document->slug) }}"
                                                    title="{{ $document->name }}"><img width="63" height="59"
-                                                                                      data-original="{{ $document->image }}"
+                                                                                      data-original="/public/{{ $document->image }}"
                                                                                       alt="{{ $document->slug }}"></a>
                                         </figure>
                                         <div class="details">
@@ -172,7 +172,7 @@
                                     <article class="box">
                                         <figure><a href="{{ route('documents.show', $document->slug) }}"
                                                    title="{{ $document->name }}"><img width="63" height="59"
-                                                                                      data-original="{{ $document->image }}"
+                                                                                      data-original="/public/{{ $document->image }}"
                                                                                       alt="{{ $document->slug }}"></a>
                                         </figure>
                                         <div class="details">

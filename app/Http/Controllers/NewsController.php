@@ -86,7 +86,7 @@ class NewsController extends AppBaseController
                 $imageName = time().'.'.Helper::transText($request->image->getClientOriginalName(),'-');
                 $request->image->move(public_path('uploads/news'), $imageName);
                 $request->image = $imageName;
-                $input['image'] = '/uploads/news/'.$imageName;
+                $input['image'] = '/public/uploads/news/'.$imageName;
             } else {
                 $input['image'] = '/images/news/no-images-news.png';
             }
@@ -176,7 +176,7 @@ class NewsController extends AppBaseController
             $imageName = time().'.'.Helper::transText($request->image->getClientOriginalName(),'-');
             $request->image->move(public_path('uploads/news'), $imageName);
             $request->image = $imageName;
-            $input['image'] = '/uploads/news/'.$imageName;
+            $input['image'] = '/public/uploads/news/'.$imageName;
         }
         $news["user_id"] = Auth::user()->id;
         $news = $this->newsRepository->update($input, $id);

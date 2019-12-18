@@ -10,7 +10,7 @@
         <div class="container">
             <h1 class="logo navbar-brand">
                 <a href="/" title="KNOWLEDGE.VN">
-                    <img data-original="/frontend/images/logo.png" alt="KNOWLEDGE.VN" />
+                    <img data-original="{{ asset('public/frontend/images/logo.png') }}" alt="KNOWLEDGE.VN" />
                 </a>
             </h1>
 

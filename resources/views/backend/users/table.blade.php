@@ -29,7 +29,7 @@
                     @if(!empty($user->avatar) && (file_exists(public_path($user->avatar))))
                         <img src="{!! $user->avatar !!}" alt="{!! $user->name !!}" width="100px" height="100px">
                     @else
-                        <img src="/uploads/default-avatar.png" alt="{!! $user->name !!}" width="100px" height="100px">
+                        <img src="/public/uploads/default-avatar.png" alt="{!! $user->name !!}" width="100px" height="100px">
                     @endif
                 </td>
                 <td>{{$user->email}}</td>

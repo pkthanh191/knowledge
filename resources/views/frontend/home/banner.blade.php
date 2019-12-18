@@ -6,7 +6,7 @@
                 <article class="box">
                     <figure>
                         <a title="" href="{{ $banner->url? $banner->url : '#' }}" target="_blank"><img alt=""
-                                                                                                       data-original="{{$banner->image}}"
+                                                                                                       data-original="/public/{{$banner->image}}"
                                                                                                        class="img-banner"></a>
                     </figure>
                 </article>

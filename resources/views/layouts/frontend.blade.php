@@ -18,32 +18,32 @@
     <link rel="shortcut icon" href="{{ url('favicon.ico') }}" type="image/x-icon">
 
     <!-- Theme Styles -->
-    <link rel="stylesheet" href="/frontend/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/frontend/css/font-awesome.min.css">
+    <link rel="stylesheet" href="{{ asset('public/frontend/css/bootstrap.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('public/frontend/css/font-awesome.min.css') }}">
     <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="/frontend/css/animate.min.css">
+    <link rel="stylesheet" href="{{ asset('public/frontend/css/animate.min.css') }}">
 
     <!-- Current Page Styles -->
-    <link rel="stylesheet" type="text/css" href="/frontend/components/revolution_slider/css/settings.css" media="screen" />
-    <link rel="stylesheet" type="text/css" href="/frontend/components/revolution_slider/css/style.css" media="screen" />
-    <link rel="stylesheet" type="text/css" href="/frontend/components/jquery.bxslider/jquery.bxslider.css" media="screen" />
-    <link rel="stylesheet" type="text/css" href="/frontend/components/flexslider/flexslider.css" media="screen" />
-    <link id="main-style" rel="stylesheet" href="/frontend/css/style-light-blue.css">
+    <link rel="stylesheet" type="text/css" href="{{ asset('public/frontend/components/revolution_slider/css/settings.css') }}" media="screen" />
+    <link rel="stylesheet" type="text/css" href="{{ asset('public/frontend/components/revolution_slider/css/style.css') }}" media="screen" />
+    <link rel="stylesheet" type="text/css" href="{{ asset('public/frontend/components/jquery.bxslider/jquery.bxslider.css') }}" media="screen" />
+    <link rel="stylesheet" type="text/css" href="{{ asset('public/frontend/components/flexslider/flexslider.css') }}" media="screen" />
+    <link id="main-style" rel="stylesheet" href="{{ asset('public/frontend/css/style-light-blue.css') }}">
 
     <!-- Main Style -->
-    <link id="main-style" rel="stylesheet" href="/frontend/css/jquery-accordion-menu.css">
+    <link id="main-style" rel="stylesheet" href="{{ asset('public/frontend/css/jquery-accordion-menu.css') }}">
 
     <!-- Updated Styles -->
-    <link rel="stylesheet" href="/frontend/css/updates.css">
+    <link rel="stylesheet" href="{{ asset('public/frontend/css/updates.css') }}">
 
     <!-- Responsive Styles -->
-    <link rel="stylesheet" href="/frontend/css/responsive.css">
+    <link rel="stylesheet" href="{{ asset('public/frontend/css/responsive.css') }}">
 
     <!-- Select2 -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/css/select2.min.css" />
 
     <!-- Custom Styles -->
-    <link rel="stylesheet" href="/frontend/css/custom.css">
+    <link rel="stylesheet" href="{{ asset('public/frontend/css/custom.css') }}">
 
     <!-- CSS for IE -->
     <!--[if lte IE 9]>
@@ -69,45 +69,45 @@
 <!-- Javascript -->
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.js"></script>
 
-<script type="text/javascript" src="/frontend/js/jquery.noconflict.js"></script>
-<script type="text/javascript" src="/frontend/js/modernizr.2.7.1.min.js"></script>
-<script type="text/javascript" src="/frontend/js/jquery-migrate-1.2.1.min.js"></script>
-<script type="text/javascript" src="/frontend/js/jquery.placeholder.js"></script>
-<script type="text/javascript" src="/frontend/js/jquery-ui.1.10.4.min.js"></script>
-<script type="text/javascript" src="/frontend/js/scripts.js"></script>
+<script type="text/javascript" src="{{ asset('public/frontend/js/jquery.noconflict.js') }}"></script>
+<script type="text/javascript" src="{{ asset('public/frontend/js/modernizr.2.7.1.min.js') }}"></script>
+<script type="text/javascript" src="{{ asset('public/frontend/js/jquery-migrate-1.2.1.min.js') }}"></script>
+<script type="text/javascript" src="{{ asset('public/frontend/js/jquery.placeholder.js') }}"></script>
+<script type="text/javascript" src="{{ asset('public/frontend/js/jquery-ui.1.10.4.min.js') }}"></script>
+<script type="text/javascript" src="{{ asset('public/frontend/js/scripts.js') }}"></script>
 
 <!-- format money -->
-<script type="text/javascript" src="/frontend/js/jquery.priceformat.min.js"></script>
+<script type="text/javascript" src="{{ asset('public/frontend/js/jquery.priceformat.min.js') }}"></script>
 
 <!-- Select2 -->
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/js/select2.min.js"></script>
 
 <!-- Twitter Bootstrap -->
-<script type="text/javascript" src="/frontend/js/bootstrap.js"></script>
+<script type="text/javascript" src="{{ asset('public/frontend/js/bootstrap.js') }}"></script>
 
 <!-- load revolution slider scripts -->
-<script type="text/javascript" src="/frontend/components/revolution_slider/js/jquery.themepunch.tools.min.js"></script>
-<script type="text/javascript" src="/frontend/components/revolution_slider/js/jquery.themepunch.revolution.min.js"></script>
+<script type="text/javascript" src="{{ asset('public/frontend/components/revolution_slider/js/jquery.themepunch.tools.min.js') }}"></script>
+<script type="text/javascript" src="{{ asset('public/frontend/components/revolution_slider/js/jquery.themepunch.revolution.min.js') }}"></script>
 
 <!-- load BXSlider scripts -->
-<script type="text/javascript" src="/frontend/components/jquery.bxslider/jquery.bxslider.min.js"></script>
+<script type="text/javascript" src="{{ asset('public/frontend/components/jquery.bxslider/jquery.bxslider.min.js') }}"></script>
 
 <!-- load FlexSlider scripts -->
-<script type="text/javascript" src="/frontend/components/flexslider/jquery.flexslider-min.js"></script>
+<script type="text/javascript" src="{{ asset('public/frontend/components/flexslider/jquery.flexslider-min.js') }}"></script>
 
 <!-- parallax -->
-<script type="text/javascript" src="/frontend/js/jquery.stellar.min.js"></script>
+<script type="text/javascript" src="{{ asset('public/frontend/js/jquery.stellar.min.js') }}"></script>
 
 <!-- waypoint -->
-<script type="text/javascript" src="/frontend/js/waypoints.min.js"></script>
+<script type="text/javascript" src="{{ asset('public/frontend/js/waypoints.min.js') }}"></script>
 
 <!-- load page Javascript -->
-<script type="text/javascript" src="/frontend/js/theme-scripts.js"></script>
-<script type="text/javascript" src="/frontend/js/scripts.js"></script>
+<script type="text/javascript" src="{{ asset('public/frontend/js/theme-scripts.js') }}"></script>
+<script type="text/javascript" src="{{ asset('public/frontend/js/scripts.js') }}"></script>
 
 <!-- App level -->
-<script type="text/javascript" src="/frontend/js/app.js"></script>
-<script type="text/javascript" src="/frontend/js/jquery-accordion-menu-bloomgoo.js"></script>
+<script type="text/javascript" src="{{ asset('public/frontend/js/app.js') }}"></script>
+<script type="text/javascript" src="{{ asset('public/frontend/js/jquery-accordion-menu-bloomgoo.js') }}"></script>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.lazyload/1.9.1/jquery.lazyload.js"></script>
 

@@ -62,11 +62,11 @@ class BannerController extends AppBaseController
         $input = $request->all();
         if (!empty($request->image)) {
             $imageName = time() . '.' . Helper::transText($request->image->getClientOriginalName(),'-');
-            $request->image->move(public_path('uploads/banners/'), $imageName);
+            $request->image->move(public_path('public/uploads/banners/'), $imageName);
             $request->image = $imageName;
-            $input['image'] = '/uploads/banners/'.$imageName;
+            $input['image'] = '/public/uploads/banners/'.$imageName;
         } else {
-            $input['image'] = '/uploads/default-image.png';
+            $input['image'] = '/public/uploads/default-image.png';
         }
 
         $banner = $this->bannerRepository->create($input);
@@ -139,7 +139,7 @@ class BannerController extends AppBaseController
             $imageName = time() . '.' . Helper::transText($request->image->getClientOriginalName(),'-');
             $request->image->move(public_path('uploads/banners/'), $imageName);
             $request->image = $imageName;
-            $input['image'] = '/uploads/banners/'.$imageName;
+            $input['image'] = '/public/uploads/banners/'.$imageName;
         }
         else{
             $input['image'] = $banner->image;

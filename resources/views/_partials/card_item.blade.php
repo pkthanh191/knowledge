@@ -15,11 +15,11 @@
                             <td colspan="2">
                                 <table class="input-form-recharge">
                                     <tr>
-                                        <td style="padding-left:0px;padding-top:5px" align="right" ><label for="92"><img  src="/uploads/mobifone.jpg" /></label> </td>
-                                        <td style="padding-left:10px;padding-top:5px"><label for="93"><img  src="/uploads/vinaphone.jpg" /></label></td>
-                                        <td style="padding-top:5px;padding-left:5px" align="left"><label for="107"><img  src="/uploads/viettel.jpg" width="110" height="35" /></label></td>
-                                        <td style="padding-top:5px;padding-left:5px" align="left"><label for="121"><img width="100" height="35" src="/uploads/vtc.jpg"></label> </td>
-                                        <td style="padding-top:5px;padding-left:5px" align="left"> <label for="120"><img width="100" height="35" src="/uploads/gate.jpg"></label></td>
+                                        <td style="padding-left:0px;padding-top:5px" align="right" ><label for="92"><img  src="/public/uploads/mobifone.jpg" /></label> </td>
+                                        <td style="padding-left:10px;padding-top:5px"><label for="93"><img  src="/public/uploads/vinaphone.jpg" /></label></td>
+                                        <td style="padding-top:5px;padding-left:5px" align="left"><label for="107"><img  src="/public/uploads/viettel.jpg" width="110" height="35" /></label></td>
+                                        <td style="padding-top:5px;padding-left:5px" align="left"><label for="121"><img width="100" height="35" src="/public/uploads/vtc.jpg"></label> </td>
+                                        <td style="padding-top:5px;padding-left:5px" align="left"> <label for="120"><img width="100" height="35" src="/public/uploads/gate.jpg"></label></td>
                                     </tr>
                                     <tr>
                                         <td align="center">

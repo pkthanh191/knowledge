@@ -5,7 +5,7 @@
                 @if(!empty($user->avatar) && (file_exists(public_path($user->avatar))))
                     <img src="{!! $user->avatar !!}" alt="{!! $user->name !!}" width="270" height="263">
                 @else
-                    <img src="/uploads/default-avatar.png" alt="{!! $user->name !!}" width="270" height="263">
+                    <img src="/public/uploads/default-avatar.png" alt="{!! $user->name !!}" width="270" height="263">
                 @endif
             </figure>
             <div class="details">
@@ -24,7 +24,7 @@
                     <dt>@lang('messages.user_account_balance'):</dt><dd id="account_balance">{{ Helper::format_money($user->account_balance, true, ' KNOW') }}</dd>
                 </dl>
                 @if($link_checkout)
-                    <script type="text/javascript" src="/frontend/js/nganluong.apps.mcflow.js"></script>
+                    <script type="text/javascript" src="{{ asset('public/frontend/js/nganluong.apps.mcflow.js') }}"></script>
                     <script language="javascript">
                         var mc_flow = new NGANLUONG.apps.MCFlow({trigger:'btn_deposit',url:'{{ isset($link_checkout)? $link_checkout : "" }}}'});
                     </script>
@@ -46,7 +46,7 @@
                         @if(!empty($user->avatar) && (file_exists(public_path($user->avatar)) || (filter_var($user->avatar, FILTER_VALIDATE_URL) && getimagesize($user->avatar))))
                             <img src="{!! $user->avatar !!}" alt="{!! $user->name !!}" height="200">
                         @else
-                            <img src="/uploads/default-avatar.png" alt="{!! $user->name !!}" height="200">
+                            <img src="/public/uploads/default-avatar.png" alt="{!! $user->name !!}" height="200">
                             <br>
                         @endif
                         {{--<div><img src="{!! $user->avatar !!}" style="height: 200px"></div>--}}

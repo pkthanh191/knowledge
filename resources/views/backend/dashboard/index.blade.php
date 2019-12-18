@@ -294,7 +294,7 @@
                                                 <img src="{!! $lastestUser->avatar !!}" alt="{!! $lastestUser->name !!}"
                                                      width="100px" height="100px">
                                             @else
-                                                <img src="/uploads/default-avatar.png" alt="{!! $lastestUser->name !!}"
+                                                <img src="/public/uploads/default-avatar.png" alt="{!! $lastestUser->name !!}"
                                                      width="100px" height="100px">
                                             @endif
                                             <a class="users-list-name"
@@ -339,7 +339,7 @@
                                             @if(!empty($value->user->avatar) && file_exists(public_path($value->user->avatar)))
                                                 <img src="{!! $value->user->avatar !!}" alt="{!! $value->user->name !!}" width="250px" height="250px">
                                             @else
-                                                <img src="/uploads/default-avatar.png" width="300px" height="300px">
+                                                <img src="/public/uploads/default-avatar.png" width="300px" height="300px">
                                             @endif
                                         </div>
                                         <div class="product-info">

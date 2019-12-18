@@ -85,9 +85,9 @@ class UserController extends AppBaseController
             $imageName = time() . '.' . $request->avatar->getClientOriginalName();
             $request->avatar->move(public_path('uploads'), $imageName);
             $request->avatar = $imageName;
-            $input['avatar'] = '/uploads/' . $imageName;
+            $input['avatar'] = '/public/uploads/' . $imageName;
         } else {
-            $input['avatar'] = '/uploads/default-avatar.png';
+            $input['avatar'] = '/public/uploads/default-avatar.png';
         }
         $password = Hash::make($request->password);
 
@@ -175,7 +175,7 @@ class UserController extends AppBaseController
             $imageName = time() . '.' . $request->avatar->getClientOriginalName();
             $request->avatar->move(public_path('uploads'), $imageName);
             $request->avatar = $imageName;
-            $input['avatar'] = '/uploads/' . $imageName;
+            $input['avatar'] = '/public/uploads/' . $imageName;
         }
         $user = $this->userRepository->update($input, $id);
 

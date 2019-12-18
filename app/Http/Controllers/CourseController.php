@@ -113,9 +113,9 @@ class CourseController extends AppBaseController
             $imageName = time().'.courses.'.Helper::transText($request->image->getClientOriginalName(),'-');
             $request->image->move(public_path('uploads/courses'), $imageName);
             $request->image = $imageName;
-            $input['image'] = '/uploads/courses/'.$imageName;
+            $input['image'] = '/public/uploads/courses/'.$imageName;
         }else{
-            $input['image'] = '/uploads/courses/default-image.png';
+            $input['image'] = '/public/uploads/courses/default-image.png';
         }
 
         $input['user_id'] = Auth::user()->id;
@@ -216,7 +216,7 @@ class CourseController extends AppBaseController
             $imageName = time().'.'.Helper::transText($request->image->getClientOriginalName(),'-');
             $request->image->move(public_path('uploads/courses'), $imageName);
             $request->image = $imageName;
-            $input['image'] = '/uploads/courses/'.$imageName;
+            $input['image'] = '/public/uploads/courses/'.$imageName;
         }
 
         $input['user_id'] = Auth::user()->id;

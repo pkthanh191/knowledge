@@ -10,7 +10,7 @@
             <div class="sidebar col-md-3">
                 <article class="detailed-logo">
                     <figure>
-                        <img data-original="{{ $course->image }}" alt="{{ $course->slug }}" style="width: 100%">
+                        <img data-original="/public/{{ $course->image }}" alt="{{ $course->slug }}" style="width: 100%">
                     </figure>
                     <div class="details">
                         <h2 class="box-title">{{ $course->name }}
@@ -94,7 +94,7 @@
                                     <li>
                                         <a href="{{ route('courses.show', $courseRelative->slug) }}"
                                            class="hover-effect">
-                                            <img data-original="{{ $courseRelative->image }}" alt="{{ $courseRelative->slug }}"
+                                            <img data-original="/public/{{ $courseRelative->image }}" alt="{{ $courseRelative->slug }}"
                                                  class="middle-item"/>
                                         </a>
                                         <a href="{{ route('courses.show', $courseRelative->slug) }}"><h5
@@ -123,7 +123,7 @@
                                     <article class="box">
                                         <figure><a href="{{ route('courses.show', $course->slug) }}"
                                                    title="{{ $course->name }}"><img width="63" height="59"
-                                                                                    data-original="{{ $course->image }}"
+                                                                                    data-original="/public/{{ $course->image }}"
                                                                                     alt="{{ $course->slug }}"></a>
                                         </figure>
                                         <div class="details">
@@ -144,7 +144,7 @@
                                     <article class="box">
                                         <figure><a href="{{ route('courses.show', $course->slug) }}"
                                                    title="{{ $course->name }}"><img width="63" height="59"
-                                                                                    data-original="{{ $course->image }}"
+                                                                                    data-original="/public/{{ $course->image }}"
                                                                                     alt="{{ $course->slug }}"></a>
                                         </figure>
                                         <div class="details">
@@ -167,7 +167,7 @@
                                     <article class="box">
                                         <figure><a href="{{ route('courses.show', $course->slug) }}"
                                                    title="{{ $course->name }}"><img width="63" height="59"
-                                                                                    data-original="{{ $course->image }}"
+                                                                                    data-original="/public/{{ $course->image }}"
                                                                                     alt="{{ $course->slug }}"></a>
                                         </figure>
                                         <div class="details">

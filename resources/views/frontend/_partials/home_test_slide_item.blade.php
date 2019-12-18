@@ -1,7 +1,7 @@
 <div class="col-sm-6 col-md-3">
     <article class="box">
         <figure>
-            <a href="#" class="hover-effect popup-gallery text-center"><img class="document-img" alt="{{ $test->slug }}" data-original="{{ $test->image }}"></a>
+            <a href="#" class="hover-effect popup-gallery text-center"><img class="document-img" alt="{{ $test->slug }}" data-original="/public/{{ $test->image }}"></a>
         </figure>
         <div class="details">
             <h5 class="box-title text-center">

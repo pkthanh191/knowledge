@@ -21,7 +21,7 @@
                 <div class="col-sm-6 col-md-2 item-padding">
                     <article class="box">
                         <figure>
-                            <a href="{{ route('documents.show', $document->slug) }}" class="text-center"><img class="document-img-home" alt="{{ $document->slug }}" data-original="{{ $document->image }}"></a>
+                            <a href="{{ route('documents.show', $document->slug) }}" class="text-center"><img class="document-img-home" alt="{{ $document->slug }}" data-original="/public/{{ $document->image }}"></a>
                         </figure>
                         <div class="detailspp">
                             <h5 class="box-title text-center">

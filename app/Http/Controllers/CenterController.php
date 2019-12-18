@@ -89,9 +89,9 @@ class CenterController extends AppBaseController
             $imageName = time() . '.centers.' . Helper::transText($request->image->getClientOriginalName(),'-');
             $request->image->move(public_path('uploads'), $imageName);
             $request->image = $imageName;
-            $input['image'] = '/uploads/' . $imageName;
+            $input['image'] = '/public/uploads/' . $imageName;
         } else {
-            $input['image'] = '/uploads/default_image.png';
+            $input['image'] = '/public/uploads/default_image.png';
         }
         $input['user_id'] = Auth::user()->id;
 
@@ -166,7 +166,7 @@ class CenterController extends AppBaseController
             $imageName = time() . '.' . Helper::transText($request->image->getClientOriginalName(),'-');
             $request->image->move(public_path('uploads'), $imageName);
             $request->image = $imageName;
-            $input['image'] = '/uploads/' . $imageName;
+            $input['image'] = '/public/uploads/' . $imageName;
         }
         $input['user_id'] = Auth::user()->id;
 

@@ -11,7 +11,7 @@
             <div class="sidebar col-md-3">
                 <article class="detailed-logo">
                     <figure>
-                        <img data-original="{{ $document->image }}" alt="{{ $document->slug }}">
+                        <img data-original="/public/{{ $document->image }}" alt="{{ $document->slug }}">
                     </figure>
                     <div class="details">
                         <h2 class="box-title">{{ $document->name }}<small><i class="soap-icon-clock"></i> {{ $document->updated_at }}</small></h2>
@@ -131,7 +131,7 @@
                                 @foreach($documentRelatives as $key => $documentRelative)
                                     <li>
                                         <a href="{{ route('documents.show', $documentRelative->slug) }}" class="hover-effect">
-                                            <img data-original="{{ $documentRelative->image }}" alt="{{ $documentRelative->slug }}" class="middle-item"/>
+                                            <img data-original="/public/{{ $documentRelative->image }}" alt="{{ $documentRelative->slug }}" class="middle-item"/>
                                         </a>
                                         <h5 class="caption">{{ $documentRelative->name }}</h5>
                                     </li>
@@ -205,7 +205,7 @@
                             <div class="image-box style14">
                                 @foreach($documentRecent as $key => $document)
                                     <article class="box">
-                                        <figure><a href="{{ route('documents.show', $document->slug) }}" title="{{ $document->name }}"><img width="63" height="59" data-original="{{ $document->image }}" alt="{{ $document->slug }}"></a></figure>
+                                        <figure><a href="{{ route('documents.show', $document->slug) }}" title="{{ $document->name }}"><img width="63" height="59" data-original="/public/{{ $document->image }}" alt="{{ $document->slug }}"></a></figure>
                                         <div class="details">
                                             <h5 class="box-title"><a href="{{ route('documents.show', $document->slug) }}">{{ $document->name }}</a></h5>
                                             <label class="price-wrapper"><span class="price-per-unit"><i class="fa fa-eye"></i> {{ $document->view_counts }} / <i class="fa fa-comments-o"></i> {{ $document->comment_counts }}</span></label>
@@ -219,7 +219,7 @@
                             <div class="image-box style14">
                                 @foreach($documentViews as $key => $document)
                                     <article class="box">
-                                        <figure><a href="{{ route('documents.show', $document->slug) }}" title="{{ $document->name }}"><img width="63" height="59" data-original="{{ $document->image }}" alt="{{ $document->slug }}"></a></figure>
+                                        <figure><a href="{{ route('documents.show', $document->slug) }}" title="{{ $document->name }}"><img width="63" height="59" data-original="/public/{{ $document->image }}" alt="{{ $document->slug }}"></a></figure>
                                         <div class="details">
                                             <h5 class="box-title"><a href="{{ route('documents.show', $document->slug) }}">{{ $document->name }}</a></h5>
                                             <label class="price-wrapper"><span class="price-per-unit"><i class="fa fa-eye"></i> {{ $document->view_counts }} / <i class="fa fa-comments-o"></i> {{ $document->comment_counts }}</span></label>
@@ -233,7 +233,7 @@
                             <div class="image-box style14">
                             @foreach($documentComments as $key => $document)
                                 <article class="box">
-                                    <figure><a href="{{ route('documents.show', $document->slug) }}" title="{{ $document->name }}"><img width="63" height="59" data-original="{{ $document->image }}" alt="{{ $document->slug }}"></a></figure>
+                                    <figure><a href="{{ route('documents.show', $document->slug) }}" title="{{ $document->name }}"><img width="63" height="59" data-original="/public/{{ $document->image }}" alt="{{ $document->slug }}"></a></figure>
                                     <div class="details">
                                         <h5 class="box-title"><a href="{{ route('documents.show', $document->slug) }}">{{ $document->name }}</a></h5>
                                         <label class="price-wrapper"><span class="price-per-unit"><i class="fa fa-eye"></i> {{ $document->view_counts }} / <i class="fa fa-comments-o"></i> {{ $document->comment_counts }}</span></label>

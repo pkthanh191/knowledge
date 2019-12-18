@@ -4,7 +4,7 @@
         @if(!empty($user->avatar) && (file_exists(public_path($user->avatar))))
             <img src="{!! $user->avatar !!}" alt="{!! $user->name !!}" width="250px" height="250px">
         @else
-            <img src="/uploads/default-avatar.png" alt="{!! $user->name !!}" width="270px" height="270px">
+            <img src="/public/uploads/default-avatar.png" alt="{!! $user->name !!}" width="270px" height="270px">
         @endif
     </div>
     <div class="col-md-9">

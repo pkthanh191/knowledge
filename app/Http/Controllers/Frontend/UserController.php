@@ -79,7 +79,7 @@ class UserController extends FrontendBaseController
             $imageName = time() . '.' . $request->avatar->getClientOriginalName();
             $request->avatar->move(public_path('uploads'), $imageName);
             $request->avatar = $imageName;
-            $input['avatar'] = '/uploads/' . $imageName;
+            $input['avatar'] = '/public/uploads/' . $imageName;
         }
         $input['name'] = $request['name'];
         $input['age'] = $request['age'];

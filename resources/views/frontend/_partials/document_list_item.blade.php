@@ -1,7 +1,7 @@
 <article class="box">
     <div class="col-sm-6 col-md-6 document-container">
         <figure class="col-sm-4 col-md-4 no-padding">
-            <a title="" href="{{ route('documents.show', $document->slug) }}" class=""><img class="padding-5" alt="{{ $document->slug }}" data-original="{{ $document->image }}"></a>
+            <a title="" href="{{ route('documents.show', $document->slug) }}" class=""><img class="padding-5" alt="{{ $document->slug }}" data-original="/public/{{ $document->image }}"></a>
             <div class="item-review">
                 <span class=""><i class="fa fa-comments-o"></i>  {{ count($document->comments) }}</span> / <span class=""><i class="fa fa-eye"></i>  {{ $document->view_counts }}</span>
             </div>

@@ -50,7 +50,7 @@
     </div>
     <div id="modal-load-more" class="modal fade" role="dialog">
         <div class="modal-dialog" style="top: 45%; left:10%">
-            <div class="text-center"><img width="60px" src="{{ url('loading.gif') }}"></div>
+            <div class="text-center"><img width="60px" src="{{ url('public/loading.gif') }}"></div>
         </div>
     </div>
 @endsection

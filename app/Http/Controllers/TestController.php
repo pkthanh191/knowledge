@@ -33,7 +33,7 @@ class TestController extends AppBaseController
         $this->testRepository = $testRepo;
         $this->categoryTestsRepository = $categoryTestRepo;
         $this->testsCategoryRepository = $testCategoryRepo;
-        $this->img_default = '/uploads/default-image.png';
+        $this->img_default = '/public/uploads/default-image.png';
         $this->commentTestRepository = $commentTestRepo;
         $this->transactionRepository = $transactionRepository;
     }
@@ -100,9 +100,9 @@ class TestController extends AppBaseController
                 $imageName = time() . '.tests.' . Helper::transText($request->image->getClientOriginalName(), '-');
                 $request->image->move(public_path('uploads/tests'), $imageName);
                 $request->image = $imageName;
-                $input['image'] = '/uploads/tests/' . $imageName;
+                $input['image'] = '/public/uploads/tests/' . $imageName;
             } else {
-                $input['image'] = '/uploads/tests/default-image.png';
+                $input['image'] = '/public/uploads/tests/default-image.png';
             }
             if (!empty($request->file)) {
                 $file = time() . '.' . Helper::transText($request->file->getClientOriginalName(), '-');
@@ -204,7 +204,7 @@ class TestController extends AppBaseController
             $imageName = time() . '.' . Helper::transText($request->image->getClientOriginalName(), '-');
             $request->image->move(public_path('uploads/tests'), $imageName);
             $request->image = $imageName;
-            $input['image'] = '/uploads/tests/' . $imageName;
+            $input['image'] = '/public/uploads/tests/' . $imageName;
         }
         if (!empty($request->file)) {
             $file = time() . '.' . Helper::transText($request->file->getClientOriginalName(), '-');
@@ -504,7 +504,7 @@ public function importExcel(Request $request)
                     $input['meta_keywords'] = $row[Helper::transText(__('messages.meta_keywords'))];
                     $input['meta_description'] = $row[Helper::transText(__('messages.meta_description'))];
                     if (empty($row[Helper::transText(__('messages.image_url'))]) || !file_exists(public_path($row[Helper::transText(__('messages.image_url'))])))
-                        $input['image'] = '/uploads/default-image.png';
+                        $input['image'] = '/public/uploads/default-image.png';
                     else
                         $input['image'] = $row[Helper::transText(__('messages.image_url'))];
                     $input['user_id'] = Auth::user()->id;

@@ -1,7 +1,7 @@
 <div class="col-sm-6 col-md-3">
     <article class="box">
         <figure>
-            <a href="{{ route('documents.show', $document->slug) }}" class="text-center"><img class="document-img" alt="{{ $document->slug }}" data-original="{{ $document->image }}"></a>
+            <a href="{{ route('documents.show', $document->slug) }}" class="text-center"><img class="document-img" alt="{{ $document->slug }}" data-original="/public/{{ $document->image }}"></a>
         </figure>
         <div class="details">
             <h5 class="box-title text-center">

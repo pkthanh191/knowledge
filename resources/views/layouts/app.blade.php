@@ -159,7 +159,7 @@
 
     <script src="/services/app_services.js"></script>
     {{--format money--}}
-    <script type="text/javascript" src="/frontend/js/jquery.priceformat.min.js"></script>
+    <script type="text/javascript" src="{{ asset('public/frontend/js/jquery.priceformat.min.js') }}"></script>
 
     @yield('scripts')
 

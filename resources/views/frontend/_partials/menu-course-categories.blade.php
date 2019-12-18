@@ -48,7 +48,7 @@
     <article class="box">
         <figure>
             <a title="" href="{{ $banner->url? $banner->url : '#' }}" target="_blank">
-                <img alt="" data-original="{{$banner->image}}" class="img-banner" style="width: 100%;">
+                <img alt="" data-original="/public/{{$banner->image}}" class="img-banner" style="width: 100%;">
             </a>
         </figure>
     </article>

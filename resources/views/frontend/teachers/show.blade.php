@@ -10,7 +10,7 @@
             <div class="sidebar col-md-3">
                 <article class="detailed-logo">
                     <figure>
-                        <img data-original="{{ $teacher->image }}" alt="{{ $teacher->slug }}">
+                        <img data-original="/public/{{ $teacher->image }}" alt="{{ $teacher->slug }}">
                     </figure>
                     <div class="details">
                         <h2 class="box-title">{{ $teacher->name }}</h2>
@@ -35,7 +35,7 @@
                 @if($center->id != 0)
                 <article class="detailed-logo">
                     <figure>
-                        <img data-original="{{ $center->image }}" alt="{{ $center->slug }}">
+                        <img data-original="/public/{{ $center->image }}" alt="{{ $center->slug }}">
                     </figure>
                     <div class="details">
                         <h2 class="box-title">  <a href="{{route('centers.show', $center->slug)}}">{{ $center->name }}</a></h2>
@@ -87,7 +87,7 @@
                     @if(count($courses)>0)
                         @foreach($courses as $key => $course)
                             <article class="box">
-                                <figure><a href="{{ route('courses.show', $course->slug) }}" title="{{ $course->name }}"><img width="63" height="59" data-original="{{ $course->image }}" alt="{{ $course->slug }}"></a></figure>
+                                <figure><a href="{{ route('courses.show', $course->slug) }}" title="{{ $course->name }}"><img width="63" height="59" data-original="/public/{{ $course->image }}" alt="{{ $course->slug }}"></a></figure>
                                 <div class="details">
                                     <h5 class="box-title"><a href="{{ route('courses.show', $course->slug) }}">{{ $course->name }}</a></h5>
                                     <p class="font-10"><i class="fa fa-clock-o"></i> {{ $course->start_date }}</p>
@@ -107,7 +107,7 @@
                                 @foreach($other_teachers as $key => $other_teacher)
                                     <li>
                                         <a href="{{ route('teachers.show', $other_teacher->slug) }}" class="hover-effect">
-                                            <img data-original="{{ $other_teacher->image }}" alt="{{ $other_teacher->slug }}" class="middle-item"/>
+                                            <img data-original="/public/{{ $other_teacher->image }}" alt="{{ $other_teacher->slug }}" class="middle-item"/>
                                         </a>
                                         <h5 class="caption">{{ $other_teacher->name }}</h5>
                                     </li>
@@ -130,7 +130,7 @@
                             <div class="image-box style14">
                                 @foreach($documentRecent as $key => $document)
                                     <article class="box">
-                                        <figure><a href="{{ route('documents.show', $document->slug) }}" title="{{ $document->name }}"><img width="63" height="59" data-original="{{ $document->image }}" alt="{{ $document->slug }}"></a></figure>
+                                        <figure><a href="{{ route('documents.show', $document->slug) }}" title="{{ $document->name }}"><img width="63" height="59" data-original="/public/{{ $document->image }}" alt="{{ $document->slug }}"></a></figure>
                                         <div class="details">
                                             <h5 class="box-title"><a href="{{ route('documents.show', $document->slug) }}">{{ $document->name }}</a></h5>
                                             <label class="price-wrapper"><span class="price-per-unit"><i class="fa fa-eye"></i> {{ $document->view_counts }} / <i class="fa fa-comments-o"></i> {{ $document->comment_counts }}</span></label>
@@ -144,7 +144,7 @@
                             <div class="image-box style14">
                                 @foreach($documentViews as $key => $document)
                                     <article class="box">
-                                        <figure><a href="{{ route('documents.show', $document->slug) }}" title="{{ $document->name }}"><img width="63" height="59" data-original="{{ $document->image }}" alt="{{ $document->slug }}"></a></figure>
+                                        <figure><a href="{{ route('documents.show', $document->slug) }}" title="{{ $document->name }}"><img width="63" height="59" data-original="/public/{{ $document->image }}" alt="{{ $document->slug }}"></a></figure>
                                         <div class="details">
                                             <h5 class="box-title"><a href="{{ route('documents.show', $document->slug) }}">{{ $document->name }}</a></h5>
                                             <label class="price-wrapper"><span class="price-per-unit"><i class="fa fa-eye"></i> {{ $document->view_counts }} / <i class="fa fa-comments-o"></i> {{ $document->comment_counts }}</span></label>
@@ -158,7 +158,7 @@
                             <div class="image-box style14">
                                 @foreach($documentComments as $key => $document)
                                     <article class="box">
-                                        <figure><a href="{{ route('documents.show', $document->slug) }}" title="{{ $document->name }}"><img width="63" height="59" data-original="{{ $document->image }}" alt="{{ $document->slug }}"></a></figure>
+                                        <figure><a href="{{ route('documents.show', $document->slug) }}" title="{{ $document->name }}"><img width="63" height="59" data-original="/public/{{ $document->image }}" alt="{{ $document->slug }}"></a></figure>
                                         <div class="details">
                                             <h5 class="box-title"><a href="{{ route('documents.show', $document->slug) }}">{{ $document->name }}</a></h5>
                                             <label class="price-wrapper"><span class="price-per-unit"><i class="fa fa-eye"></i> {{ $document->view_counts }} / <i class="fa fa-comments-o"></i> {{ $document->comment_counts }}</span></label>

@@ -3,7 +3,7 @@
 <div class="col-md-10" >
     {{--<img align="middle" style="margin-left:auto;margin-right: auto; display: block ;max-width: 360px; max-height: 500px ; border:1px solid dodgerblue" src="{!! $test->image !!}" alt="{!! $test->name !!}">--}}
     @if(is_null($test->image))
-        <img style="margin-left:auto;margin-right: auto; display: block ;max-width: 360px; max-height: 500px ; border:1px solid dodgerblue" src="/uploads/default_image.png"  width="360px" height="360px">
+        <img style="margin-left:auto;margin-right: auto; display: block ;max-width: 360px; max-height: 500px ; border:1px solid dodgerblue" src="/public/uploads/default_image.png"  width="360px" height="360px">
     @else
         <img style="margin-left:auto;margin-right: auto; display: block ;max-width: 360px; max-height: 500px ; border:1px solid dodgerblue" src="{!! $test->image !!}" width="360px" height="360px">
     @endif

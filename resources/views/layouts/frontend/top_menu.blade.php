@@ -10,10 +10,10 @@
                 <ul class="quick-menu pull-right dropdown">
                     <li><a class="dropdown-toggle" data-toggle="dropdown" href="#">
                             @if(!empty(Auth::user()->avatar) && (file_exists(public_path(Auth::user()->avatar))))
-                                <img data-original="{!! Auth::user()->avatar !!}" alt="{!! Auth::user()->name !!}"
+                                <img data-original="/public/{!! Auth::user()->avatar !!}" alt="{!! Auth::user()->name !!}"
                                      width="25px" height="25px" style="border-radius: 50%;width: 25px;height: 25px; ">
                             @else
-                                <img data-original="/uploads/default-avatar.png" alt="{!! Auth::user()->name !!}"
+                                <img data-original="/public/uploads/default-avatar.png" alt="{!! Auth::user()->name !!}"
                                      width="25px" height="25px" style="border-radius: 50%;width: 25px;height: 25px; ">
                             @endif
                             {!! Auth::user()->name !!}

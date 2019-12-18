@@ -1,6 +1,6 @@
 <article class="box">
     <figure class="col-sm-3 col-md-2">
-        <a href="{{ route('courses.show', $course->slug) }}" class=""><img class="padding-5" alt="{{ $course->slug }}" data-original="{{ $course->image }}"></a>
+        <a href="{{ route('courses.show', $course->slug) }}" class=""><img class="padding-5" alt="{{ $course->slug }}" data-original="/public/{{ $course->image }}"></a>
     </figure>
     <div class="details col-sm-9 col-md-10">
         <div>

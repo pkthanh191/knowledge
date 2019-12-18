@@ -35,7 +35,7 @@
                     @if((!empty($teacher->image)) && file_exists(public_path($teacher->image)))
                         <img src="{!! $teacher->image !!}" alt="{!! $teacher->name !!}" width="100px" height="100px">
                     @else
-                        <img src="/uploads/default_image.png" alt="{!! $teacher->name !!}" width="100px" height="100px">
+                        <img src="/public/uploads/default_image.png" alt="{!! $teacher->name !!}" width="100px" height="100px">
                     @endif
                 </td>
                 <td class="col-xs-1">

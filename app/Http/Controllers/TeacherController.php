@@ -86,7 +86,7 @@ class TeacherController extends AppBaseController
             $imageName = time().'.teachers.'.Helper::transText($request->image->getClientOriginalName(),'-');
             $request->image->move(public_path('uploads'), $imageName);
             $request->image = $imageName;
-            $input['image'] = '/uploads/'.$imageName;
+            $input['image'] = '/public/uploads/'.$imageName;
         }
         $input['user_id'] = Auth::user()->id;
         $teacher = $this->teacherRepository->create($input);
@@ -160,7 +160,7 @@ class TeacherController extends AppBaseController
             $imageName = time().'.'.Helper::transText($request->image->getClientOriginalName(),'-');
             $request->image->move(public_path('uploads'), $imageName);
             $request->image = $imageName;
-            $input['image'] = '/uploads/'.$imageName;
+            $input['image'] = '/public/uploads/'.$imageName;
         }
         $teacher = $this->teacherRepository->update($input, $id);
 

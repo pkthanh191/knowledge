@@ -14,7 +14,7 @@
             <div class="sidebar col-md-3">
                 <article class="detailed-logo">
                     <figure>
-                        <img data-original="{{ $test->image }}" alt="{{ $test->slug }}">
+                        <img data-original="/public/{{ $test->image }}" alt="{{ $test->slug }}">
                     </figure>
                     <div class="details">
                         <h2 class="box-title">{{ $test->name }}
@@ -161,7 +161,7 @@
                                 @foreach($testRelatives as $key => $testRelative)
                                     <li>
                                         <a href="{{ route('tests.show', $testRelative->slug) }}" class="hover-effect">
-                                            <img data-original="{{ $testRelative->image }}" alt="{{ $testRelative->slug }}"
+                                            <img data-original="/public/{{ $testRelative->image }}" alt="{{ $testRelative->slug }}"
                                                  class="middle-item"/>
                                         </a>
                                         <h5 class="caption">{{ $testRelative->name }}</h5>
@@ -235,7 +235,7 @@
                                     <article class="box">
                                         <figure><a href="{{ route('tests.show', $test->slug) }}"
                                                    title="{{ $test->name }}"><img width="63" height="59"
-                                                                                  data-original="{{ $test->image }}"
+                                                                                  data-original="/public/{{ $test->image }}"
                                                                                   alt="{{ $test->slug }}"></a></figure>
                                         <div class="details">
                                             <h5 class="box-title"><a
@@ -256,7 +256,7 @@
                                     <article class="box">
                                         <figure><a href="{{ route('tests.show', $test->slug) }}"
                                                    title="{{ $test->name }}"><img width="63" height="59"
-                                                                                  data-original="{{ $test->image }}"
+                                                                                  data-original="/public/{{ $test->image }}"
                                                                                   alt="{{ $test->slug }}"></a></figure>
                                         <div class="details">
                                             <h5 class="box-title"><a
@@ -277,7 +277,7 @@
                                     <article class="box">
                                         <figure><a href="{{ route('tests.show', $test->slug) }}"
                                                    title="{{ $test->name }}"><img width="63" height="59"
-                                                                                  data-original="{{ $test->image }}"
+                                                                                  data-original="/public/{{ $test->image }}"
                                                                                   alt="{{ $test->slug }}"></a></figure>
                                         <div class="details">
                                             <h5 class="box-title"><a

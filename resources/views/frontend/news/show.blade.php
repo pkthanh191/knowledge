@@ -10,7 +10,7 @@
             <div class="sidebar col-md-3">
                 <article class="detailed-logo">
                     <figure>
-                        <img data-original="{{ $newsIndex->image }}" alt="{{ $newsIndex->slug }}">
+                        <img data-original="/public/{{ $newsIndex->image }}" alt="{{ $newsIndex->slug }}">
                     </figure>
                     <div class="details">
                         <h2 class="box-title">{{ $newsIndex->name }}
@@ -61,7 +61,7 @@
                                 @foreach($newsRelatives as $key => $newsRelative)
                                     <li>
                                         <a href="{{ route('news.show', $newsRelative->slug) }}" class="hover-effect">
-                                            <img data-original="{{ $newsRelative->image }}"
+                                            <img data-original="/public/{{ $newsRelative->image }}"
                                                  alt="{{ $newsRelative->slug }}"
                                                  class="middle-item"/>
                                         </a>
@@ -143,7 +143,7 @@
                                     <article class="box">
                                         <figure><a href="{{ route('news.show', $news->slug) }}"
                                                    title="{{ $news->name }}"><img width="63" height="59"
-                                                                                  data-original="{{ $news->image }}"
+                                                                                  data-original="/public/{{ $news->image }}"
                                                                                   alt="{{ $news->slug }}"></a>
                                         </figure>
                                         <div class="details recent-news">

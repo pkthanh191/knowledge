@@ -4,7 +4,7 @@
             @if((!empty($comment->user->avatar)) && file_exists(public_path($comment->user->avatar)))
                 <img data-original="{!! $comment->user->avatar !!}" width="72" height="72" alt="">
             @else
-                <img data-original="/uploads/default-avatar.png" width="72" height="72" alt="">
+                <img data-original="/public/uploads/default-avatar.png" width="72" height="72" alt="">
             @endif
         </div>
         <div class="comment-box">
@@ -27,7 +27,7 @@
                         @if((!empty($child->user->avatar)) && file_exists(public_path($child->user->avatar)))
                             <img data-original="{!! $child->user->avatar !!}" width="72" height="72" alt="">
                         @else
-                            <img data-original="/uploads/default-avatar.png" width="72" height="72" alt="">
+                            <img data-original="/public/uploads/default-avatar.png" width="72" height="72" alt="">
                         @endif
                     </div>
                     <div class="comment-box">

@@ -1,6 +1,6 @@
 <article class="box">
     <figure class="col-sm-3 col-md-2">
-        <a href="{{ route('centers.show', $center->slug) }}" class=""><img class="padding-5" alt="{{ $center->slug }}" data-original="{{ $center->image }}"></a>
+        <a href="{{ route('centers.show', $center->slug) }}" class=""><img class="padding-5" alt="{{ $center->slug }}" data-original="/public/{{ $center->image }}"></a>
     </figure>
     <div class="details col-sm-9 col-md-10">
         <div>

@@ -4,7 +4,7 @@
             @foreach($courses as $key => $course)
                 <li>
                     <a href="{{ route('courses.show', $course->slug) }}">
-                        <img data-original="{{ $course->image }}" alt="{{ $course->slug }}" class="middle-item img-course"/>
+                        <img data-original="/public/{{ $course->image }}" alt="{{ $course->slug }}" class="middle-item img-course"/>
                     </a>
                     <h5 class="caption">
                         <a href="{{ route('courses.show', $course->slug) }}">

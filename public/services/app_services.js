@@ -456,7 +456,7 @@ function getDistrictByCodeCity() {
     var code = $('#city_id').val();
     var districts = [];
     $.ajax({
-        url: '/api/admin/districts_by_code_city/' + code.toString(),
+        url: '/public/api/admin/districts_by_code_city/' + code.toString(),
         type: 'get',
         success: success,
         error: error,
@@ -779,7 +779,7 @@ function comment() {
                         var lastcomment = "<li tabindex='-1' id='" + response.comment_id + "'class='comment depth-1 parent-" + response.comment_id + "'" + "value='" + response.comment_id + "'" + "style='display: list-item;'" + ">" +
                             "<div class='the-comment'>" +
                             "<div class='avatar'> " +
-                            "<img src='/uploads/default-avatar.png' width='72' height='72' alt=''>" +
+                            "<img src='/public/uploads/default-avatar.png' width='72' height='72' alt=''>" +
                             "</div>" +
                             "<div class='comment-box'>" +
                             "<div class='comment-author'>" +
@@ -802,7 +802,7 @@ function comment() {
                             "<li tabindex='-1' id='" + parent_id + "'class='comment depth-2'" + "value='" + response.comment_id + "'style='display: list-item;'" + ">" +
                             "<div class='the-comment'>" +
                             "<div class='avatar'> " +
-                            "<img src='/uploads/default-avatar.png' width='72' height='72' alt=''>" +
+                            "<img src='/public/uploads/default-avatar.png' width='72' height='72' alt=''>" +
                             "</div>" +
                             "<div class='comment-box'>" +
                             "<div class='comment-author'>" +

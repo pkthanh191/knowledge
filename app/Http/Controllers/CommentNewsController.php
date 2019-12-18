@@ -241,7 +241,7 @@ class CommentNewsController extends AppBaseController
         $acc = null;
         if (count($users) < 10) {
             $user['name'] = Helper::generateName();
-            $user['avatar'] = '/uploads/default-image.png';
+            $user['avatar'] = '/public/uploads/default-image.png';
             $user['email'] = Helper::generateRandomString() . '@gmail.com';
             $user['password'] = Hash::make($user['email']);
             $user['group_id'] = 4;
@@ -272,7 +272,7 @@ class CommentNewsController extends AppBaseController
             $acc = null;
             if (count($users) < 10) {
                 $user['name'] = Helper::generateName();
-                $user['avatar'] = '/uploads/default-avatar.png';
+                $user['avatar'] = '/public/uploads/default-avatar.png';
                 $user['email'] = Helper::generateRandomString() . '@gmail.com';
                 $user['password'] = Hash::make($user['email']);
                 $user['group_id'] = 4;

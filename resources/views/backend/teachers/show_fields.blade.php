@@ -4,7 +4,7 @@
         @if((!empty($teacher->image)) && file_exists(public_path($teacher->image)))
             <img src="{!! $teacher->image !!}" alt="{!! $teacher->name !!}" width="250px">
         @else
-            <img src="/uploads/default-avatar.png" alt="{!! $teacher->name !!}" width="250px">
+            <img src="/public/uploads/default-avatar.png" alt="{!! $teacher->name !!}" width="250px">
         @endif
     </div>
     <div class="col-md-9">

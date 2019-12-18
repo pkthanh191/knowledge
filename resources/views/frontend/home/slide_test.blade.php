@@ -25,7 +25,7 @@
                         <figure>
                             <a href="{{ route('tests.show', $test->slug) }}" class="text-center"><img
                                         class="document-img-home" alt="{{ $test->slug }}"
-                                        data-original="{{ $test->image }}"></a>
+                                        data-original="/public/{{ $test->image }}"></a>
                         </figure>
                         <div class="details">
                             <h5 class="box-title text-center">

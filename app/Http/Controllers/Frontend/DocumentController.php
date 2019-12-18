@@ -134,7 +134,7 @@ class DocumentController extends FrontendBaseController
                     if(!empty($user->avatar) && (file_exists(public_path($user->avatar))))
                         $result['avatar'] = $comment->user->avatar;
                     else
-                        $result['avatar'] = '/uploads/default-avatar.png';
+                        $result['avatar'] = '/public/uploads/default-avatar.png';
                     return Response::json($result);
                 }
                 return Response::json(['account_balance'=>$user->account_balance,

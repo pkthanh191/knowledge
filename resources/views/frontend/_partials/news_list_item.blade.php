@@ -3,7 +3,7 @@
         <div class="row">
             <div class="col-md-4">
                 <figure class="image-container">
-                    <a href="{{ route('news.show', $new->slug) }}" class=""><img class="news-img" data-original="{{ $new->image }}" alt="{{ $new->slug }}" /></a>
+                    <a href="{{ route('news.show', $new->slug) }}" class=""><img class="news-img" data-original="/public/{{ $new->image }}" alt="{{ $new->slug }}" /></a>
                 </figure>
             </div>
 

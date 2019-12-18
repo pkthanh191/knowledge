@@ -311,7 +311,7 @@ function registerAjax() {
                 dataType: "json",
                 success: function (response) {
                     if (response.success) {
-                        var text = '<div class="text-center"><img src="/frontend/images/logo.png"></div><br>' + '<div class="alert-success" style="margin: 20px 0 20px 0; padding: 5px; text-align: center;"> ' +
+                        var text = '<div class="text-center"><img src="/public/frontend/images/logo.png"></div><br>' + '<div class="alert-success" style="margin: 20px 0 20px 0; padding: 5px; text-align: center;"> ' +
                             '<p><strong>Đăng ký thành công!</strong><br>Cảm ơn bạn đã đăng ký tài khoản trên hệ thống của chúng tôi. Vui lòng kiểm tra hòm thư email để kích hoạt và sử dụng tài khoản. </p>' +
                             '</div>';
                         jQuery('#dang-ky').html(text);
@@ -357,7 +357,7 @@ function districtSelect() {
     var code = jQuery('#city_id').val();
     var districts = [];
     jQuery.ajax({
-        url: '/api/admin/districts_by_code_city/' + code,
+        url: '/public/api/admin/districts_by_code_city/' + code,
         type: 'get',
         success: success,
         error: error,
