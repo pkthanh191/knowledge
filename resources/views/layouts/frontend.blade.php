@@ -67,7 +67,7 @@
 </div>
 
 <!-- Javascript -->
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.js"></script>
 
 <script type="text/javascript" src="{{ asset('public/frontend/js/jquery.noconflict.js') }}"></script>
 <script type="text/javascript" src="{{ asset('public/frontend/js/modernizr.2.7.1.min.js') }}"></script>

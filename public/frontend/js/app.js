@@ -1,7 +1,8 @@
+jQuery.ajaxSetup({
+    headers: {'X-CSRF-Token': jQuery('meta[name=_token]').attr('content')}
+});
 jQuery(document).ready(function () {
-    jQuery.ajaxSetup({
-        headers: {'X-CSRF-Token': jQuery('meta[name=_token]').attr('content')}
-    });
+    
 
     loadMoreComment();
     switchModeView();
