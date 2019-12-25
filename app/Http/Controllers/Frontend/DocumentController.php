@@ -194,7 +194,7 @@ class DocumentController extends FrontendBaseController
                 $user = Auth::user();
                 if ($user->account_balance >= Helper::rip_tags(config('system.minus-knows-download.value'))) {
                     $link = $document->file;
-                    $file = url('/') . $link;
+                    $file = url('/') . '/public/' . $link;
                     $user->account_balance -= Helper::rip_tags(config('system.minus-knows-download.value'));
                     $user->save();
                     $this->transactionRepository->create([

@@ -164,7 +164,7 @@ class TestController extends FrontendBaseController
                 $user = Auth::user();
                 if ($user->account_balance >= Helper::rip_tags(config('system.minus-knows-download.value'))) {
                     $link = $test->file;
-                    $file = url('/') . $link;
+                    $file = url('/') . '/public/' . $link;
                     $user->account_balance -= Helper::rip_tags(config('system.minus-knows-download.value'));
                     $user->save();
                     $this->transactionRepository->create([
