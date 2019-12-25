@@ -47,6 +47,7 @@
                     <ul class="discover triangle hover row">
                         <li class="col-xs-12 @if($type == 'termUse') active @endif"><a href="{{ route('pages', 'dieu-khoan-su-dung') }}">@lang('messages.footer_terms_of_use')</a></li>
                         <li class="col-xs-12 @if($type == 'termSecurity') active @endif"><a href="{{ route('pages', 'dieu-khoan-bao-mat') }}">@lang('messages.footer_terms_of_security')</a></li>
+                        <li><a href="http://online.gov.vn/Home/WebDetails/60906" target="_blank"><img src="{{ asset('public/frontend/images/logoSaleNoti.png') }}" width=300px height=150px></li>
                     </ul>
                 </div>
             </div>
@@ -56,7 +57,7 @@
         <div class="container-fluid">
             <div class="copyright text-center">
                 <a id="back-to-top" href="#" class="animated pull-right" data-animation-type="bounce"><i class="soap-icon-longarrow-up circle"></i></a>
-                <div class="info">{{ config('system.copyright-by.value') }} - Design by <a href="http://bloomgoo.vn" target="_blank">BLOOMGOO.VN</a></div>
+                <div class="info">{{ config('system.copyright-by.value') }}</div>
                 <div class="info">{{ config('system.copyright-organization.value') }}</div>
                 <div class="info-last">{{ config('system.copyright-license.value') }}</div>
             </div>
