@@ -28,7 +28,7 @@
     {!! Form::label('image', __('messages.document_image')) !!}
     @if(isset($document))
         <div>
-            <img src="{{asset($document->image)}}" style="height: 200px">
+            <img src="{{asset('/public/'.$document->image)}}" style="height: 200px">
         </div>
         <br>
     @endif

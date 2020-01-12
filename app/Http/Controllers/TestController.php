@@ -100,9 +100,9 @@ class TestController extends AppBaseController
                 $imageName = time() . '.tests.' . Helper::transText($request->image->getClientOriginalName(), '-');
                 $request->image->move(public_path('uploads/tests'), $imageName);
                 $request->image = $imageName;
-                $input['image'] = '/public/uploads/tests/' . $imageName;
+                $input['image'] = '/uploads/tests/' . $imageName;
             } else {
-                $input['image'] = '/public/uploads/tests/default-image.png';
+                $input['image'] = '/uploads/tests/default-image.png';
             }
             if (!empty($request->file)) {
                 $file = time() . '.' . Helper::transText($request->file->getClientOriginalName(), '-');
@@ -204,7 +204,7 @@ class TestController extends AppBaseController
             $imageName = time() . '.' . Helper::transText($request->image->getClientOriginalName(), '-');
             $request->image->move(public_path('uploads/tests'), $imageName);
             $request->image = $imageName;
-            $input['image'] = '/public/uploads/tests/' . $imageName;
+            $input['image'] = '/uploads/tests/' . $imageName;
         }
         if (!empty($request->file)) {
             $file = time() . '.' . Helper::transText($request->file->getClientOriginalName(), '-');

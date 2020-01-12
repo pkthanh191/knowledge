@@ -168,7 +168,7 @@
             path_absolute : "/",
             selector: "textarea",
             language: "vi_VN",
-            language_url : '/js/tinymce/langs/vi_VN.js',
+            language_url : '{!! asset('/public/js/tinymce/langs/vi_VN.js') !!}',
             plugins: [
                 "advlist autolink lists link image charmap print preview hr anchor pagebreak",
                 "searchreplace wordcount visualblocks visualchars code fullscreen",

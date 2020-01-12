@@ -31,7 +31,7 @@
                     {{--<td>{!! $test->slug !!}</td>--}}
                     <td>{!! $test->comment_counts !!}</td>
                     <td>{!! $test->view_counts !!}</td>
-                    <td><img src="{!! $test->image !!}" width="150px"></td>
+                    <td><img src="{{asset('/public/'.$test->image)}}" width="150px"></td>
                     <td>
                         {!! Form::open(['route' => ['admin.tests.destroy', $test->id], 'method' => 'delete']) !!}
                         <div class='btn-group'>

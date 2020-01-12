@@ -23,7 +23,7 @@
                 <td width="200px">{!! Helper::formatCategories($document->categories,"<br>") !!}</td>
                 <td width="130px">{!! $document->comment_counts !!}</td>
                 <td width="100px">{!! $document->view_counts !!}</td>
-                <td width="40px"><img src="{!! asset($document->image) !!}" style="width: 100px; height: 100px"></td>
+                <td width="40px"><img src="{!! asset('/public/'.$document->image) !!}" style="width: 100px; height: 100px"></td>
                 <td width="100px">
                     {!! Form::open(['route' => ['admin.documents.destroy', $document->id], 'method' => 'delete']) !!}
                     <div class='btn-group'>

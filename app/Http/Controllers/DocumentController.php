@@ -112,9 +112,9 @@ class DocumentController extends AppBaseController
             $imageName = time() . '.' . Helper::transText($request->image->getClientOriginalName(), '-');
             $request->image->move(public_path('uploads/documents'), $imageName);
             $request->image = $imageName;
-            $input['image'] = '/public/uploads/documents/' . $imageName;
+            $input['image'] = '/uploads/documents/' . $imageName;
         } else {
-            $input['image'] = '/public/uploads/documents/default-image.png';
+            $input['image'] = '/uploads/documents/default-image.png';
         }
         if (!empty($request->file)) {
             $file = time() . '.' . Helper::transText($request->file->getClientOriginalName(), '-');;
@@ -244,7 +244,7 @@ class DocumentController extends AppBaseController
             $imageName = time() . '.' . Helper::transText($request->image->getClientOriginalName(), '-');
             $request->image->move(public_path('uploads/documents'), $imageName);
             $request->image = $imageName;
-            $input['image'] = '/public/uploads/documents/' . $imageName;
+            $input['image'] = '/uploads/documents/' . $imageName;
         }
         if (!empty($request->file)) {
             $file = time() . '.' . Helper::transText($request->file->getClientOriginalName(), '-');
