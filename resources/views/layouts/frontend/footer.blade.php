@@ -47,7 +47,7 @@
                     <ul class="discover triangle hover row">
                         <li class="col-xs-12 @if($type == 'termUse') active @endif"><a href="{{ route('pages', 'dieu-khoan-su-dung') }}">@lang('messages.footer_terms_of_use')</a></li>
                         <li class="col-xs-12 @if($type == 'termSecurity') active @endif"><a href="{{ route('pages', 'dieu-khoan-bao-mat') }}">@lang('messages.footer_terms_of_security')</a></li>
-                        <li><a href="http://online.gov.vn/Home/WebDetails/60906" target="_blank"><img src="{{ asset('public/frontend/images/logoSaleNoti.png') }}" width=300px height=150px></li>
+                        <li><a href="http://online.gov.vn/Home/WebDetails/60906" target="_blank"><img src="{{ asset('public/frontend/images/logoSaleNoti.png') }}" width=150px height=75px></li>
                     </ul>
                 </div>
             </div>

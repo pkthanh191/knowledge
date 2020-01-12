@@ -1,4 +1,5 @@
-<header id="header" class="navbar-static-top">
+<header id="header" class="navbar-static-top"><meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
     @include('layouts.frontend.top_menu')
 
     <div class="main-header">
