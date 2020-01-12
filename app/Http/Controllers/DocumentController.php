@@ -114,7 +114,7 @@ class DocumentController extends AppBaseController
             $request->image = $imageName;
             $input['image'] = '/uploads/documents/' . $imageName;
         } else {
-            $input['image'] = '/uploads/documents/default-image.png';
+            $input['image'] = '/uploads/documents/default-avatar.png';
         }
         if (!empty($request->file)) {
             $file = time() . '.' . Helper::transText($request->file->getClientOriginalName(), '-');;
@@ -579,7 +579,7 @@ class DocumentController extends AppBaseController
                             $input['meta_keywords'] = $row[str_slug(__('messages.meta_keywords'), '_')];
                             $input['meta_description'] = $row[str_slug(__('messages.meta_description'), '_')];
                             if (empty($row[str_slug(__('messages.image_url'), '_')]) || !file_exists(public_path($row[str_slug(__('messages.image_url'), '_')])))
-                                $input['image'] = '/public/uploads/default-image.png';
+                                $input['image'] = '/public/uploads/default-avatar.png';
                             else
                                 $input['image'] = $row[str_slug(__('messages.image_url'), '_')];
                             $input['file'] = $row[str_slug(__('messages.document_file'), '_')];

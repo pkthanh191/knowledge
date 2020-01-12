@@ -66,7 +66,7 @@ class BannerController extends AppBaseController
             $request->image = $imageName;
             $input['image'] = '/public/uploads/banners/'.$imageName;
         } else {
-            $input['image'] = '/public/uploads/default-image.png';
+            $input['image'] = '/public/uploads/default-avatar.png';
         }
 
         $banner = $this->bannerRepository->create($input);

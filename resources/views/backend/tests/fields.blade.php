@@ -39,9 +39,9 @@
 <!-- Show Image-->
 <div class="form-group col-sm-6">
     @if(!isset($test)||is_null($test->image))
-        <img src="/public/uploads/default-image.png"  width="200px" height="200px">
+        <img src="{{ asset('/public/uploads/default-avatar.png') }}"  width="200px" height="200px">
     @else
-        <img src="{!! $test->image !!}" width="200px" height="200px">
+        <img src="{{ asset('/public/'.$test->image) }}" width="200px" height="200px">
     @endif
 </div>
 

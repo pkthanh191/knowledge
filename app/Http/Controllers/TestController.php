@@ -33,7 +33,7 @@ class TestController extends AppBaseController
         $this->testRepository = $testRepo;
         $this->categoryTestsRepository = $categoryTestRepo;
         $this->testsCategoryRepository = $testCategoryRepo;
-        $this->img_default = '/public/uploads/default-image.png';
+        $this->img_default = '/public/uploads/default-avatar.png';
         $this->commentTestRepository = $commentTestRepo;
         $this->transactionRepository = $transactionRepository;
     }
@@ -102,7 +102,7 @@ class TestController extends AppBaseController
                 $request->image = $imageName;
                 $input['image'] = '/uploads/tests/' . $imageName;
             } else {
-                $input['image'] = '/uploads/tests/default-image.png';
+                $input['image'] = '/uploads/tests/default-avatar.png';
             }
             if (!empty($request->file)) {
                 $file = time() . '.' . Helper::transText($request->file->getClientOriginalName(), '-');
@@ -504,7 +504,7 @@ public function importExcel(Request $request)
                     $input['meta_keywords'] = $row[Helper::transText(__('messages.meta_keywords'))];
                     $input['meta_description'] = $row[Helper::transText(__('messages.meta_description'))];
                     if (empty($row[Helper::transText(__('messages.image_url'))]) || !file_exists(public_path($row[Helper::transText(__('messages.image_url'))])))
-                        $input['image'] = '/public/uploads/default-image.png';
+                        $input['image'] = '/public/uploads/default-avatar.png';
                     else
                         $input['image'] = $row[Helper::transText(__('messages.image_url'))];
                     $input['user_id'] = Auth::user()->id;

@@ -20,7 +20,7 @@
                 @if((!empty($banner->image)) && file_exists(public_path($banner->image)))
                     <img src="{!! $banner->image !!}" alt="{!! $banner->name !!}" width="100px" height="100px">
                 @else
-                    <img src="/public/uploads/default-image.png" alt="{!! $banner->name !!}" width="100px" height="100px">
+                    <img src="/public/uploads/default-avatar.png" alt="{!! $banner->name !!}" width="100px" height="100px">
                 @endif
             </td>
             <td><a href="{!! $banner->url !!}" target="_blank">{!! $banner->url !!}</a></td>

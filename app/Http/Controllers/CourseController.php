@@ -115,7 +115,7 @@ class CourseController extends AppBaseController
             $request->image = $imageName;
             $input['image'] = '/public/uploads/courses/'.$imageName;
         }else{
-            $input['image'] = '/public/uploads/courses/default-image.png';
+            $input['image'] = '/public/uploads/courses/default-avatar.png';
         }
 
         $input['user_id'] = Auth::user()->id;
